@@ -119,8 +119,8 @@ catalog.addEventListener('click', (event) => {
     modalItem.classList.remove('hide');
     document.addEventListener('keydown', closeModal);
   }
-  /* ДЗ как получить id для li.card?*/
-  const idCard = 0;
+  /* ДЗ*/
+  const idCard = target.closest('.card').dataset.id;
   modalItem.querySelector('.modal__image-item').src = target.src;
   modalItem.querySelector('.modal__header-item').textContent =
     dataBase[idCard].nameItem;
